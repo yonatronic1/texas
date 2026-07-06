@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: white;
+  color: rgb(17, 24, 39);
+  transition: colors 300ms;
+}
+
+body.dark {
+  background: rgb(17, 24, 39);
+  color: rgb(243, 244, 246);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+.dark .glass {
+  background: rgba(31, 41, 55, 0.3);
+  border-color: rgba(75, 85, 99, 0.2);
+}
+
+.glass-dark {
+  background: rgba(17, 24, 39, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+.dark .glass-dark {
+  background: rgba(31, 41, 55, 0.4);
+  border-color: rgba(75, 85, 99, 0.2);
+}
+
+/* Transitions */
+.transition-smooth {
+  transition: all 300ms ease-in-out;
+}
+
+/* Buttons */
+.btn-premium {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: white;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, rgb(37, 99, 235), rgb(37, 99, 235));
+}
+
+.btn-primary:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  border: 2px solid rgb(37, 99, 235);
+  color: rgb(37, 99, 235);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: rgb(37, 99, 235);
+  color: white;
+}
+
+.btn-gold {
+  background: linear-gradient(to right, rgb(245, 158, 11), rgb(249, 115, 22));
+  color: rgb(17, 24, 39);
+}
+
+.btn-gold:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(to right, rgb(37, 99, 235), rgb(245, 158, 11));
+  z-index: 1000;
+}
+
+/* Utilities */
+.container-custom {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, rgb(37, 99, 235), rgb(59, 130, 246), rgb(245, 158, 11));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-spacing {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-spacing {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(240, 244, 248);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgb(17, 24, 39);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 163, 175);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(107, 114, 128);
+}
