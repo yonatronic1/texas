@@ -77,7 +77,8 @@ export default function Footer() {
             {expandedSections.contact && (
               <div className="border-t border-gray-700 px-3 py-3 space-y-2 text-xs sm:text-sm bg-gray-900 dark:bg-zinc-950">
                 <p className="text-gray-300">Bole Road, Dembel City Center, Addis Ababa</p>
-                <p className="text-gray-300">Phone: <a href="tel:+251115549273" className="hover:text-white">+251 11 554 92 73</a></p>                
+                <p className="text-gray-300">Phone: <a href="tel:+251 927 70 70 35
+" className="hover:text-white">+251 11 554 92 73</a></p>                
               </div>
             )}
           </div>
