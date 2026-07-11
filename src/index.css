@@ -14,12 +14,70 @@ body {
   font-family: 'Inter', sans-serif;
   background: white;
   color: rgb(17, 24, 39);
-  transition: colors 300ms;
+  transition: background-color 300ms ease, color 300ms ease;
+  min-height: 100vh;
 }
 
-body.dark {
-  background: rgb(17, 24, 39);
+html.dark,
+html.dark body,
+html.dark #root {
+  background-color: #000000 !important;
   color: rgb(243, 244, 246);
+}
+
+html.dark body {
+  background-image: radial-gradient(circle at top, rgba(30, 41, 59, 0.7) 0%, rgba(2, 6, 23, 0.98) 45%, #000000 100%);
+  background-attachment: fixed;
+}
+
+html.dark .bg-white {
+  background-color: #000000 !important;
+}
+
+html.dark .bg-gray-50 {
+  background-color: #0a0a0a !important;
+}
+
+html.dark .bg-gray-100 {
+  background-color: #111111 !important;
+}
+
+html.dark .bg-blue-50 {
+  background-color: #111827 !important;
+}
+
+html.dark .text-gray-600,
+html.dark .text-gray-700,
+html.dark .text-gray-800,
+html.dark .text-gray-900 {
+  color: #f3f4f6 !important;
+}
+
+html.dark .text-gray-500,
+html.dark .text-gray-400 {
+  color: #d1d5db !important;
+}
+
+html.dark .border-gray-200,
+html.dark .border-gray-300,
+html.dark .border-gray-700 {
+  border-color: #2f3746 !important;
+}
+
+html.dark .bg-blue-50 {
+  background-color: #111827 !important;
+}
+
+html.dark .bg-white {
+  background-color: #000000 !important;
+}
+
+html.dark .bg-gray-50 {
+  background-color: #09090b !important;
+}
+
+html.dark .bg-gray-100 {
+  background-color: #111111 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,8 +94,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark .glass {
-  background: rgba(31, 41, 55, 0.3);
-  border-color: rgba(75, 85, 99, 0.2);
+  background: rgba(17, 24, 39, 0.75);
+  border-color: rgba(148, 163, 184, 0.2);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
 }
 
 .glass-dark {
@@ -48,8 +107,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark .glass-dark {
-  background: rgba(31, 41, 55, 0.4);
-  border-color: rgba(75, 85, 99, 0.2);
+  background: rgba(15, 23, 42, 0.8);
+  border-color: rgba(148, 163, 184, 0.2);
 }
 
 /* Transitions */
