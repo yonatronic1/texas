@@ -44,8 +44,7 @@ export default function Navbar({ theme, toggleTheme }) {
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
 
-          <a href="https://wa.me/251 927 70 70 35
-" target="_blank" rel="noreferrer" className="hidden sm:inline-block px-3 py-2 bg-green-500 text-white rounded-md">WhatsApp</a>
+          
 
           <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden p-2 rounded-md bg-gray-100 text-gray-900 dark:bg-zinc-900 dark:text-white">{isOpen ? '✕' : '☰'}</button>
         </div>
