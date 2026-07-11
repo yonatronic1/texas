@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import FloatingButtons from './components/FloatingButtons';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Testimonials from './pages/Testimonials';
@@ -57,7 +57,6 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
-        <FloatingButtons />
       </div>
     </Router>
   );
